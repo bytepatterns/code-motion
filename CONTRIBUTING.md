@@ -8,4 +8,14 @@ Scenes, sound styles and fixes are welcome.
 - Keep scene modules React-free and deterministic.
 - Run `npm run typecheck` before pushing.
 
+## Good first scenes
+
+Each of these fits the existing grammar. The two sorts are an `AlgoSpec` module only — `BarSort` draws them, no composition needed (see "A new sort instead?" in [SCENE-SPEC.md](SCENE-SPEC.md)).
+
+- **Insertion sort** — lift one bar, slide it left past every larger bar, drop it into place; the sorted prefix grows from the left.
+- **Quick sort partition** — one partition pass only: pivot on the right, `i` and `j` walking the bars, the pivot landing in its final slot.
+- **Two pointers** — a sorted array and a target sum; `lo` and `hi` close in from both ends until the pair is found.
+- **Sliding window** — the longest run under a limit; the window's right edge grows, its left edge shrinks, a best-so-far counter locks.
+- **Stack push/pop** — a bracket-matching run: every `(` pushes a plate, every `)` pops one, the empty stack at the end is the answer.
+
 By contributing you agree that your contribution is licensed under the MIT License.

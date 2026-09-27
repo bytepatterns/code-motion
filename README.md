@@ -1,14 +1,18 @@
 # code-motion
 
+[![check](https://github.com/bytepatterns/code-motion/actions/workflows/check.yml/badge.svg)](https://github.com/bytepatterns/code-motion/actions/workflows/check.yml)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![PRs welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+
 **Algorithm explainer reels drawn entirely in code — 9:16, safe-zone verified, sound synced to the algorithm's own steps.**
 
-<p align="center">
-  <img src="docs/stills/bubble-sort.png" width="260" alt="Bubble sort scene, middle frame">
-  <img src="docs/stills/binary-search.png" width="260" alt="Binary search scene, middle frame">
-  <img src="docs/stills/bfs.png" width="260" alt="Breadth-first search scene, middle frame">
-</p>
+| Bubble sort | Binary search | Breadth-first search |
+|:---:|:---:|:---:|
+| <img src="docs/preview/bubble-sort.gif" width="260" alt="Bubble sort reel: eight bars compared and swapped until the right end locks"> | <img src="docs/preview/binary-search.gif" width="260" alt="Binary search reel: a range bar halving toward the target"> | <img src="docs/preview/bfs.gif" width="260" alt="Breadth-first search reel: a graph filling layer by layer from the start node"> |
 
-Every frame is a React component. Every sound is synthesised from raw PCM. Every number in the hook is measured from a real run of the algorithm. No stock footage, no samples, no timeline editor — and two gates that fail the build if a label drifts under the platform UI or a sound misses its step.
+<p align="center"><em>Every frame is React, every sound is synthesised.</em></p>
+
+The sound is synthesised from raw PCM and every number in the hook is measured from a real run of the algorithm. No stock footage, no samples, no timeline editor — and two gates that fail the build if a label drifts under the platform UI or a sound misses its step.
 
 This is the engine behind the [@bytepatterns](https://www.instagram.com/bytepatterns/) reels, trimmed to three example scenes and opened up as a template. Built on [Remotion](https://www.remotion.dev).
 
@@ -94,6 +98,14 @@ Five synthesised styles ship: `musical`, `tactile`, `arcade` (dense, −20..−1
 - Fonts are loaded in `src/fonts.ts` (Manrope + IBM Plex Mono via `@remotion/google-fonts`).
 
 One rule the gate enforces: the canvas and every decorative colour must stay at or under luma 70, and anything a viewer must read must sit above it. Scenes are dark by design.
+
+## Try it in 60 seconds
+
+1. **Install** — `git clone https://github.com/bytepatterns/code-motion.git && cd code-motion && npm install`
+2. **Open the live preview** — `npm run studio`, then pick `BubbleSortBars` and press play.
+3. **Change the input, watch every number follow** — edit `VALUES` in `src/algorithms/spec.ts` and save. The hook, the swap counter, the chips and the length of the clip update, because they are read from the run.
+
+When you like it, `npm run render:bfs && npm run check -- bfs` renders the shortest scene to `out/bfs.mp4` and runs both gates on it — exactly what CI runs on every push (a few minutes on a laptop).
 
 ## Add a scene in 10 minutes
 

@@ -1,0 +1,63 @@
+name: check
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: check-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  gates:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      # ffmpeg + ffprobe for the gates; the rest is the Chromium runtime list
+      # from https://www.remotion.dev/docs/miscellaneous/linux-dependencies
+      # (Ubuntu 24.04 names: libasound2t64).
+      - name: System packages
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends \
+            ffmpeg \
+            libnss3 libdbus-1-3 libatk1.0-0 libasound2t64 libxrandr2 \
+            libxkbcommon-dev libxfixes3 libxcomposite1 libxdamage1 libgbm-dev \
+            libcups2 libcairo2 libpango-1.0-0 libatk-bridge2.0-0
+
+      - name: Install
+        run: npm ci
+
+      - name: Typecheck
+        run: npm run typecheck
+
+      - name: Synthesise sound banks
+        run: npm run sfx
+
+      # the shortest example scene (BFS, 425 frames); software GL on a GPU-less runner
+      - name: Render BreadthFirstSearch
+        run: npm run render:bfs -- --gl=swangle
+
+      - name: Gates (safe zone + sound)
+        run: npm run check -- BreadthFirstSearch
+
+      - name: Upload render
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: bfs-render
+          path: out/bfs.mp4
+          if-no-files-found: ignore
+          retention-days: 7
