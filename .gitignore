@@ -1,0 +1,6 @@
+node_modules/
+out/
+# synthesised deterministically by `npm run sfx` (runs on npm install)
+public/sfx/
+.DS_Store
+Thumbs.db

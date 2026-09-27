@@ -1,0 +1,47 @@
+{
+  "name": "code-motion",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Algorithm explainer reels drawn entirely in code — 9:16, safe-zone verified, sound synced to the algorithm's own steps.",
+  "license": "MIT",
+  "author": "BytePatterns (https://bytepatterns.com)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bytepatterns/code-motion.git"
+  },
+  "engines": {
+    "node": ">=22.18"
+  },
+  "scripts": {
+    "studio": "remotion studio",
+    "typecheck": "tsc --noEmit",
+    "node": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --import ./scripts/lib/ts-register.mjs",
+    "postinstall": "npm run sfx",
+    "sfx": "npm run node -- scripts/make-sfx.mjs",
+    "sfx:premix": "npm run node -- scripts/premix-sfx.mjs",
+    "render:bubble-sort": "remotion render BubbleSortBars out/bubble-sort.mp4",
+    "render:binary-search": "remotion render BinarySearch out/binary-search.mp4",
+    "render:bfs": "remotion render BreadthFirstSearch out/bfs.mp4",
+    "render:all": "npm run render:bubble-sort && npm run render:binary-search && npm run render:bfs",
+    "render:preview:musical": "remotion render BubbleSortBars-musical out/preview-musical.mp4",
+    "render:preview:tactile": "remotion render BubbleSortBars-tactile out/preview-tactile.mp4",
+    "render:preview:arcade": "remotion render BubbleSortBars-arcade out/preview-arcade.mp4",
+    "render:preview:calm": "remotion render BubbleSortBars-calm out/preview-calm.mp4",
+    "render:preview:calm-pad": "remotion render BubbleSortBars-calm-pad out/preview-calm-pad.mp4",
+    "verify:layout": "node scripts/verify-layout.mjs",
+    "verify:sound": "npm run node -- scripts/verify-sound.mjs",
+    "check": "npm run node -- scripts/check.mjs",
+    "stills": "npm run node -- scripts/stills.mjs"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.515",
+    "@remotion/google-fonts": "4.0.515",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remotion": "4.0.515"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.31",
+    "typescript": "^5.9.3"
+  }
+}
