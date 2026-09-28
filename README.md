@@ -146,6 +146,31 @@ SCENE-SPEC.md           how to write a scene
 prompts/new-scene.md    a ready-to-fill brief for an AI coding agent
 ```
 
+## More reels from the full engine
+
+10 more reels rendered by the engine this template is trimmed from: the same frame, the same safe zone, the same hook band and code panel. Their scenes are not in this repository; each links to the interactive lesson it comes from.
+
+<table>
+<tr>
+<td align="center" valign="top" width="33%"><img src="docs/reels/26-kadanes-algorithm.gif" width="260" alt="Kadane's Algorithm reel, animated preview"><br><b>Kadane's Algorithm: Maximum Subarray in One Pass</b><br><em>45 subarrays? Kadane reads just 9.</em><br><a href="https://bytepatterns.com/learn/arrays/kadanes-algorithm?utm_source=github&amp;utm_medium=readme&amp;utm_campaign=code-motion">Full lesson</a></td>
+<td align="center" valign="top" width="33%"><img src="docs/reels/27-monotonic-stack.gif" width="260" alt="Monotonic Stack reel, animated preview"><br><b>Monotonic Stack: Next Greater Element in O(n)</b><br><em>Pop until smaller. Nobody waits twice.</em><br><a href="https://bytepatterns.com/learn/stacks-queues/monotonic-stack?utm_source=github&amp;utm_medium=readme&amp;utm_campaign=code-motion">Full lesson</a></td>
+<td align="center" valign="top" width="33%"><img src="docs/reels/28-tree-traversals.gif" width="260" alt="Tree Traversals reel, animated preview"><br><b>Tree Traversals: Preorder, Inorder, Postorder, Level Order</b><br><em>One tree, 4 orders. Which one is sorted?</em><br><a href="https://bytepatterns.com/learn/trees/tree-traversals?utm_source=github&amp;utm_medium=readme&amp;utm_campaign=code-motion">Full lesson</a></td>
+</tr>
+<tr>
+<td align="center" valign="top" width="33%"><img src="docs/reels/29-merge-intervals.gif" width="260" alt="Merge Intervals reel, animated preview"><br><b>Merge Intervals: Sort Once, Sweep Once</b><br><em>Merge 6 intervals into 3 blocks.</em><br><a href="https://bytepatterns.com/learn/intervals/merge-intervals?utm_source=github&amp;utm_medium=readme&amp;utm_campaign=code-motion">Full lesson</a></td>
+<td align="center" valign="top" width="33%"><img src="docs/reels/30-dijkstra.gif" width="260" alt="Dijkstra's Algorithm reel, animated preview"><br><b>Dijkstra's Algorithm: Why the Nearest Node Goes First</b><br><em>One hop: 9 ms. Two hops: 5 ms.</em><br><a href="https://bytepatterns.com/learn/graphs/dijkstra-intro?utm_source=github&amp;utm_medium=readme&amp;utm_campaign=code-motion">Full lesson</a></td>
+<td align="center" valign="top" width="33%"><img src="docs/reels/31-two-sum.gif" width="260" alt="Two Sum reel, animated preview"><br><b>Two Sum in One Pass: The Complement Lookup</b><br><em>14 pair checks? Try 6 lookups.</em><br><a href="https://bytepatterns.com/learn/hash-tables/two-sum?utm_source=github&amp;utm_medium=readme&amp;utm_campaign=code-motion">Full lesson</a></td>
+</tr>
+<tr>
+<td align="center" valign="top" width="33%"><img src="docs/reels/32-lru-cache.gif" width="260" alt="LRU Cache reel, animated preview"><br><b>LRU Cache: Hash Map + Doubly Linked List</b><br><em>4 slots. A 5th key. Who gets evicted?</em><br><a href="https://bytepatterns.com/learn/lld/lru-cache-design?utm_source=github&amp;utm_medium=readme&amp;utm_campaign=code-motion">Full lesson</a></td>
+<td align="center" valign="top" width="33%"><img src="docs/reels/33-rate-limiting.gif" width="260" alt="Rate Limiting: 4 Algorithms reel, animated preview"><br><b>4 Rate Limiting Algorithms on the Same Burst</b><br><em>Limit: 4 per second. One lets 8 through.</em><br><a href="https://bytepatterns.com/learn/system-design/rate-limiting?utm_source=github&amp;utm_medium=readme&amp;utm_campaign=code-motion">Full lesson</a></td>
+<td align="center" valign="top" width="33%"><img src="docs/reels/34-top-k-heap.gif" width="260" alt="Top K Elements reel, animated preview"><br><b>Top K Elements with a Min-Heap</b><br><em>Top 4 of 10? The root decides.</em><br><a href="https://bytepatterns.com/learn/heaps/top-k-elements?utm_source=github&amp;utm_medium=readme&amp;utm_campaign=code-motion">Full lesson</a></td>
+</tr>
+<tr>
+<td align="center" valign="top" width="33%"><img src="docs/reels/35-attention.gif" width="260" alt="Attention, Intuitively reel, animated preview"><br><b>Attention, Intuitively: One Word, Two Sentences</b><br><em>Which words does "bank" listen to?</em><br><a href="https://bytepatterns.com/learn/ai-ml/attention-intuition?utm_source=github&amp;utm_medium=readme&amp;utm_campaign=code-motion">Full lesson</a></td>
+</tr>
+</table>
+
 ## Follow along
 
 New scenes ship as short videos and interactive lessons.
@@ -160,3 +185,5 @@ New scenes ship as short videos and interactive lessons.
 The code in this repository is [MIT](LICENSE) licensed. The sound banks are synthesised by the code, so they carry no third-party licence.
 
 Two dependencies have their own terms: **Remotion** is source-available under the [Remotion License](https://www.remotion.dev/license) — free for individuals and small teams, a company licence is required above that threshold — and the fonts (**Manrope**, **IBM Plex Mono**) are under the SIL Open Font License and are fetched from Google Fonts at render time. See [CONTRIBUTING.md](CONTRIBUTING.md) to add a scene.
+
+The animations under `docs/reels/` are excerpts of BytePatterns reels shown for reference; the scenes that draw them are not part of this repository.
