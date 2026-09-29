@@ -148,7 +148,7 @@ prompts/new-scene.md    a ready-to-fill brief for an AI coding agent
 
 ## More reels from the full engine
 
-10 more reels rendered by the engine this template is trimmed from: the same frame, the same safe zone, the same hook band and code panel. Their scenes are not in this repository; each links to the interactive lesson it comes from.
+25 more reels rendered by the engine this template is trimmed from: the same frame, the same safe zone, the same hook band and code panel. Their scenes are not in this repository; each links to the interactive lesson it comes from.
 
 <table>
 <tr>
@@ -168,6 +168,31 @@ prompts/new-scene.md    a ready-to-fill brief for an AI coding agent
 </tr>
 <tr>
 <td align="center" valign="top" width="33%"><img src="docs/reels/35-attention.gif" width="260" alt="Attention, Intuitively reel, animated preview"><br><b>Attention, Intuitively: One Word, Two Sentences</b><br><em>Which words does "bank" listen to?</em><br><a href="https://bytepatterns.com/learn/ai-ml/attention-intuition?utm_source=github&amp;utm_medium=readme&amp;utm_campaign=code-motion">Full lesson</a></td>
+<td align="center" valign="top" width="33%"><img src="docs/reels/36-aws-iam.gif" width="260" alt="IAM: Deny Beats Allow reel, animated preview"><br><b>IAM Policy Evaluation: Why Deny Beats Allow</b><br><em>Allow s3:* says yes. Deny beats allow.</em><br><a href="https://bytepatterns.com/learn/aws/shared-responsibility-and-iam?utm_source=github&amp;utm_medium=readme&amp;utm_campaign=code-motion">Full lesson</a></td>
+<td align="center" valign="top" width="33%"><img src="docs/reels/37-aws-auto-scaling.gif" width="260" alt="Auto Scaling: One Zone Dies reel, animated preview"><br><b>One AWS Availability Zone Dies. The App Stays Up.</b><br><em>One zone dies. The app stays up.</em><br><a href="https://bytepatterns.com/learn/aws/ec2-auto-scaling-and-load-balancers?utm_source=github&amp;utm_medium=readme&amp;utm_campaign=code-motion">Full lesson</a></td>
+</tr>
+<tr>
+<td align="center" valign="top" width="33%"><img src="docs/reels/38-aws-sns-sqs-fanout.gif" width="260" alt="SQS vs SNS: Fan-Out + DLQ reel, animated preview"><br><b>SQS vs SNS: One Message, Five Workers (Fan-Out + DLQ)</b><br><em>One message, five workers.</em><br><a href="https://bytepatterns.com/learn/aws/sqs-vs-sns-vs-eventbridge?utm_source=github&amp;utm_medium=readme&amp;utm_campaign=code-motion">Full lesson</a></td>
+<td align="center" valign="top" width="33%"><img src="docs/reels/39-aws-dynamodb-hot-partition.gif" width="260" alt="DynamoDB Hot Partition reel, animated preview"><br><b>DynamoDB Hot Partitions: Why One Key Melts the Table</b><br><em>Why one key melts the table.</em><br><a href="https://bytepatterns.com/learn/aws/rds-vs-dynamodb?utm_source=github&amp;utm_medium=readme&amp;utm_campaign=code-motion">Full lesson</a></td>
+<td align="center" valign="top" width="33%"><img src="docs/reels/40-aws-image-pipeline.gif" width="260" alt="Design on AWS: Image Upload Pipeline reel, animated preview"><br><b>Design an Image Upload Pipeline on AWS in 40 Seconds</b><br><em>Image upload pipeline in 40 seconds.</em><br><a href="https://bytepatterns.com/learn/aws/design-a-system-on-aws?utm_source=github&amp;utm_medium=readme&amp;utm_campaign=code-motion">Full lesson</a></td>
+</tr>
+<tr>
+<td align="center" valign="top" width="33%"><img src="docs/reels/41-validate-bst.gif" width="260" alt="Validate a BST reel, animated preview"><br><b>Validate a BST: Why Checking the Parent Is Not Enough</b><br><em>6 beats its parent 3. Still not a BST.</em><br><a href="https://bytepatterns.com/learn/trees/validate-bst?utm_source=github&amp;utm_medium=readme&amp;utm_campaign=code-motion">Full lesson</a></td>
+<td align="center" valign="top" width="33%"><img src="docs/reels/42-lowest-common-ancestor.gif" width="260" alt="Lowest Common Ancestor reel, animated preview"><br><b>Lowest Common Ancestor in a BST: Stop Where the Paths Split</b><br><em>LCA of 0 and 4? Just 2 nodes visited.</em><br><a href="https://bytepatterns.com/learn/trees/lowest-common-ancestor?utm_source=github&amp;utm_medium=readme&amp;utm_campaign=code-motion">Full lesson</a></td>
+<td align="center" valign="top" width="33%"><img src="docs/reels/43-edit-distance.gif" width="260" alt="Edit Distance reel, animated preview"><br><b>Edit Distance: Turn flaw into lawn in 2 Edits, Not 4</b><br><em>Turn flaw into lawn. Not 4 edits. Just 2.</em><br><a href="https://bytepatterns.com/learn/dynamic-programming/edit-distance?utm_source=github&amp;utm_medium=readme&amp;utm_campaign=code-motion">Full lesson</a></td>
+</tr>
+<tr>
+<td align="center" valign="top" width="33%"><img src="docs/reels/44-coin-change-dp-vs-greedy.gif" width="260" alt="Coin Change: DP vs Greedy reel, animated preview"><br><b>Coin Change: Where Greedy Goes Wrong and DP Gets It Right</b><br><em>Coins 1, 3, 4. Make 6. Greedy: 3. DP: 2.</em><br><a href="https://bytepatterns.com/learn/dynamic-programming/coin-change?utm_source=github&amp;utm_medium=readme&amp;utm_campaign=code-motion">Full lesson</a></td>
+<td align="center" valign="top" width="33%"><img src="docs/reels/45-lis-patience-piles.gif" width="260" alt="LIS in O(n log n) reel, animated preview"><br><b>Longest Increasing Subsequence in O(n log n) with Patience Piles</b><br><em>8 cards, 4 piles. Piles = LIS length.</em><br><a href="https://bytepatterns.com/learn/dynamic-programming/lis-patience-tails?utm_source=github&amp;utm_medium=readme&amp;utm_campaign=code-motion">Full lesson</a></td>
+<td align="center" valign="top" width="33%"><img src="docs/reels/46-kmp-failure-table.gif" width="260" alt="KMP Failure Table reel, animated preview"><br><b>KMP Failure Table: Fall Back, Never Restart</b><br><em>Mismatch at "c"? Jump to table[k-1].</em><br><a href="https://bytepatterns.com/learn/strings/kmp-failure-table?utm_source=github&amp;utm_medium=readme&amp;utm_campaign=code-motion">Full lesson</a></td>
+</tr>
+<tr>
+<td align="center" valign="top" width="33%"><img src="docs/reels/47-union-find-path-compression.gif" width="260" alt="Union-Find: Path Compression reel, animated preview"><br><b>Union-Find Path Compression: 4 Hops Once, Then 1</b><br><em>find(0): 4 hops. Next time: 1 hop.</em><br><a href="https://bytepatterns.com/learn/union-find/path-compression?utm_source=github&amp;utm_medium=readme&amp;utm_campaign=code-motion">Full lesson</a></td>
+<td align="center" valign="top" width="33%"><img src="docs/reels/48-word-break.gif" width="260" alt="Word Break reel, animated preview"><br><b>Word Break with DP: Why the "cam" Cut Is a Dead End</b><br><em>Split "codecamp". "cam" fits. Dead end.</em><br><a href="https://bytepatterns.com/learn/dynamic-programming/word-break-dp?utm_source=github&amp;utm_medium=readme&amp;utm_campaign=code-motion">Full lesson</a></td>
+<td align="center" valign="top" width="33%"><img src="docs/reels/49-sliding-window-median.gif" width="260" alt="Sliding Window Median reel, animated preview"><br><b>Sliding Window Median: Two Heaps and Lazy Deletion</b><br><em>1 leaves the window. It stays in the heap.</em><br><a href="https://bytepatterns.com/learn/two-heaps-k-way/sliding-window-median?utm_source=github&amp;utm_medium=readme&amp;utm_campaign=code-motion">Full lesson</a></td>
+</tr>
+<tr>
+<td align="center" valign="top" width="33%"><img src="docs/reels/50-kruskal-vs-prim.gif" width="260" alt="Kruskal vs Prim reel, animated preview"><br><b>Kruskal vs Prim: Same Minimum Spanning Tree, Different Order</b><br><em>Kruskal: 1, 2, 3. Prim: 1, 3, 2. Both 6.</em><br><a href="https://bytepatterns.com/learn/graphs/kruskal-mst?utm_source=github&amp;utm_medium=readme&amp;utm_campaign=code-motion">Full lesson</a></td>
 </tr>
 </table>
 
